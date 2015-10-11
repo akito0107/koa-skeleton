@@ -1,5 +1,5 @@
 {
-  "name": "slack-logger",
+  "name":  "koa-skeleton",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
