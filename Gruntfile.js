@@ -8,8 +8,7 @@ module.exports = function (grunt) {
       dev: {
         script: './src/index.js',
         options: {
-          watch: ['./app'],
-          ext: 'js'
+          watch: ['src/index.js', 'src/server/**/*.js']
         }
       }
     },
@@ -22,7 +21,7 @@ module.exports = function (grunt) {
     },
     webpack: {
       dev: {
-        entry: './src/public/js/app/index.js',
+        entry: './src/front/app/index.js',
         output: {
           path: './src/public/js/dist',
           filename: 'dist.js'
@@ -42,7 +41,7 @@ module.exports = function (grunt) {
       }
     },
     watch: {
-      files: ['./src/public/js/app/**/*.js'],
+      files: ['./src/dist/js/app/**/*.js'],
       tasks: ['webpack:dev']
     }
   });
